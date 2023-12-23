@@ -25,7 +25,7 @@ function Tip({onCustomChange, handleTip, customTip}) {
                 {percentage}%
               </button>
             ))}
-            <input value={customTip} type='number' className='bg-white  text-teal-950 font-black px-2 py-2 rounded '
+            <input value={customTip} type='number' className='bg-white  text-teal-950  font-normal md:font-black px-2 py-2 rounded '
              onChange={handleCustomTip} placeholder='Custom'/>
           </div>
     </div>

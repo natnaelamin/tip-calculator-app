@@ -14,7 +14,7 @@ function TotalTip({handleReset,tipAmount, totalAmount, resetBg}) {
         </div>
         <p className='text-teal-300 text-3xl font-bold'>${tipAmount.toFixed(2)}</p>
         </div>
-        <div className='flex justify-between mb-10'>
+        <div className='flex justify-between mb-5 md:mb-10'>
         <div>
             <p className='text-white font-bold text-base'>Total</p>
             <p className='text-slate-400 font-bold text-start text-sm'>/ person</p>

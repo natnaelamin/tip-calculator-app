@@ -66,9 +66,12 @@ function App() {
 
   
   return (
-    <div className='flex flex-col justify-center text-center bg-blue-100 h-screen bg-cover py-24  md:px-72 '>
-      <h1 className='text-teal-700 font-semibold text-xl mt-28 md:mt-10 mb-10'>SPLI<h1>TTER</h1></h1>
-      <div className='grid md:grid-cols-2 mt-8 gap-5 bg-blue-300 rounded-2xl px-10  py-10'>
+    <div className='flex flex-col justify-center text-center bg-blue-100 h-screen bg-cover py-16 md:py-24 px-2  md:px-72 '>
+      <div className='text-teal-700 font-semibold text-xl mt-5 md:my-10 '>
+        <h1 >SPLI</h1>
+        <h1>TTER</h1>
+      </div>
+      <div className='grid md:grid-cols-2 mt-4 md:mt-8 gap-2 md:gap-5 bg-blue-300 rounded-2xl px-5 md:px-10  py-10 mb-10'>
         <div className=' text-left' >
           <Bill bill={bill} onBillChange={onBillChange}/>
           <Tip onCustomChange={onCustomChange} handleTip={handleTip} customTip={customTip} />
