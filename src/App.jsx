@@ -62,22 +62,26 @@ function App() {
     totalAmount = 0.00;
   }
 
-  const resetBg = (bill !== 0 || customTip !== 0 || tip !== 0 || numberOfPeople !== 0);
+  const resetBg = (bill !== "" || customTip !== "" || tip !== "" || numberOfPeople !== "");
 
   
   return (
-    <div className='flex flex-col justify-center text-center bg-blue-100 h-screen bg-cover py-16 md:py-24 px-2  md:px-72 '>
+    <div className='flex flex-col justify-center text-center bg-blue-100
+     h-screen bg-cover py-16 md:py-24 px-2  md:px-72 '>
       <div className='text-teal-700 font-semibold text-xl mt-16 md:my-10 '>
         <h1 >SPLITTER</h1>
       </div>
-      <div className='grid md:grid-cols-2 mt-4 md:mt-8 gap-2 md:gap-5 bg-blue-300 rounded-2xl px-5 md:px-10  py-10 mb-10'>
+      <div className='grid md:grid-cols-2 mt-4 md:mt-8 gap-2 md:gap-5 bg-blue-300
+       rounded-2xl px-5 md:px-10  py-10 mb-10'>
         <div className=' text-left' >
           <Bill bill={bill} onBillChange={onBillChange}/>
           <Tip onCustomChange={onCustomChange} handleTip={handleTip} customTip={customTip} />
-          <People People={numberOfPeople} handlePeople={handlePeople} bill={bill} tip={tip} customTip={customTip}/>  
+          <People People={numberOfPeople} handlePeople={handlePeople}
+           bill={bill} tip={tip} customTip={customTip}/>  
         </div>
         <div className='bg-teal-950 rounded-xl px-10 py-8'>
-          <TotalTip tipAmount={tipAmount} totalAmount={totalAmount} resetBg={resetBg} handleReset={handleReset} />
+          <TotalTip tipAmount={tipAmount} totalAmount={totalAmount}
+           resetBg={resetBg} handleReset={handleReset} />
         </div>
       </div>
     </div>
